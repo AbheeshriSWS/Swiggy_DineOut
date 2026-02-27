@@ -59,6 +59,9 @@ ul, ol {
     aspect-ratio: 18 / 18;
     max-width: 18px;
     width: 100%;
+    position: absolute;
+    left: 44%;
+    top: 30%;
 }
 
 .user {
@@ -89,3 +92,22 @@ ul, ol {
     position: relative;
 }
 
+.header-contanier {
+    max-width: 1060px;
+    margin: auto;
+    padding-inline: 10px;
+}
+
+.nav-location {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+} */
