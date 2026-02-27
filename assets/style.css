@@ -34,6 +34,18 @@ ul, ol {
     aspect-ratio: 130 / 62;
     width: 100%;
     max-width: 130px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-logo::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 1px;
+    background-color: #d9dadb;
+    right: -13px;
+    top: 20px;
 }
 
 .nav-logo img{
@@ -59,17 +71,20 @@ ul, ol {
     aspect-ratio: 18 / 18;
     max-width: 18px;
     width: 100%;
+    position: absolute;
+    right: 3%;
+    top: 30%;
 }
 
 .user {
     max-width: 48px;
     aspect-ratio: 48 / 48;
     width: 100%;
+    cursor: pointer;
+    flex-shrink: 0;
 }
 
 .input input[type="text"]{
-    aspect-ratio: 496 / 56;
-    max-width: 496px;
     width: 100%;
     font-size: 18px;
     padding: 15px;
@@ -83,9 +98,182 @@ ul, ol {
     border: none;
     outline: none;
     border-radius: 12px;
+    cursor: pointer;
 }
 
 .input{
     position: relative;
+    flex: 1;              
+    flex: 0 0 496px;       
 }
 
+.nav-right, .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-block: 7px;
+    gap: 5rem;
+}
+
+.header-container{
+    max-width: 1090px;
+    width: 100%;
+    margin: auto;
+    padding-inline: 10px;
+}
+
+.nav-location {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.nav-location p{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.95px;
+    color: rgba(2, 6, 12, 0.75);
+    overflow: hidden;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+header {
+    box-shadow: rgba(27, 30, 36, 0.1) 0px 8px 16px 0px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid rgba(2, 6, 12, 0.15);
+}
+
+/* godwit */
+
+.hero-wrapper{
+    padding-block: 120px;
+}
+
+.container{
+    padding-inline: 10px;
+    max-width: 1220px;
+    margin: auto;
+    width: 100%;
+}
+
+.godwit-tabs{
+    border-bottom: 1px solid rgba(2, 6, 12, 0.15);
+}
+
+.godwit-head h2{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.8px;
+    color: rgba(2, 6, 12, 0.75);
+}
+
+.godwit-tabs {
+    display: flex;
+    padding-top: 18px;
+    gap: 15px;
+}
+
+.tab span{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.45px;
+    color: rgba(2, 6, 12, 0.6);
+}
+
+.tab{
+    padding-inline: 10px;
+}
+
+.active-tab {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.active-tab::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(255, 82, 0);
+    border-radius: 10px 10px 0 0;
+}
+
+.active-tab span {
+    color: rgba(2, 6, 12, 0.92);
+    font-weight: 700;
+}
+
+.bg-img {
+    aspect-ratio: 1200 / 290;
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.godwit-content {
+    padding-block: 40px;
+    position: relative;
+}
+
+.hero-box {
+    background-color: #FFF;
+    position: absolute;
+    top: 75px;
+    left: 30px;
+    aspect-ratio: 545 / 230;
+    max-width: 545px;
+    width: 100%;
+    padding: 32px 20px 20px 32px;
+    border: 1px solid rgba(2, 6, 12, 0.15);
+    border-radius: 20px;
+}
+
+.hero-text h4{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    color: rgba(2, 6, 12, 0.92);
+}
+
+.hero-text p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.45px;
+    color: rgba(2, 6, 12, 0.92);
+}
+
+.hero-links a{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.4px;
+    color: rgb(255, 82, 0);
+}
