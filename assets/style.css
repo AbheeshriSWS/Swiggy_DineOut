@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-weight: 200;
+    color: #02060c;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* navigation-bar */
+
+.nav-logo {
+    aspect-ratio: 130 / 62;
+    width: 100%;
+    max-width: 130px;
+}
+
+.nav-logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.nav-location-fly {
+    aspect-ratio: 20 / 20;
+    max-width: 20px;
+    width: 100%;
+}
+
+.nav-location-arrow{
+    aspect-ratio: 12 / 12;
+    max-width: 12px;
+    width: 100%;
+    transform: rotate(90deg);
+}
+
+.search {
+    aspect-ratio: 18 / 18;
+    max-width: 18px;
+    width: 100%;
+}
+
+.user {
+    max-width: 48px;
+    aspect-ratio: 48 / 48;
+    width: 100%;
+}
+
+.input input[type="text"]{
+    aspect-ratio: 496 / 56;
+    max-width: 496px;
+    width: 100%;
+    font-size: 18px;
+    padding: 15px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.45px;
+    color: rgba(2, 6, 12, 0.45);
+    overflow: hidden;
+    background-color: rgb(240, 240, 245);
+    border: none;
+    outline: none;
+    border-radius: 12px;
+}
+
+.input{
+    position: relative;
+}
+
