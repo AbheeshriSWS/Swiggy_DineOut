@@ -421,16 +421,45 @@ img {
     width: 100%;
 }
 
-.offer-row{
+.offer-row {
     padding-block: 32px;
     margin-right: -15px;
     margin-left: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .left-arrow, .right-arrow {
-    display: inline-block;
+    display: flex;
     background: rgba(2, 6, 12, 0.15);
     padding: 8px;
     border-radius: 50%;
+    align-items: center;
+    justify-content: center;
 }
 
+.arrows {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container2{
+    aspect-ratio: 299 / 450;
+    max-width: 299px;
+    width: 100%;
+}
+
+.container1 {
+    aspect-ratio: 835 / 299;
+    max-width: 835px;
+    width: 100%;
+}
