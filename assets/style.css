@@ -25,10 +25,6 @@ a {
   display: inline-block;
 }
 
-ul, ol {
-  list-style: none;
-}
-
 /* navigation-bar */
 
 .nav-logo {
@@ -648,7 +644,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-block: 20px;
+    padding: 20px 0 0 20px;
 }
 
 .food-img {
@@ -698,11 +694,11 @@ hr {
 
 .location-head h2 {
     font-weight: 800;
-    letter-spacing: -0.4px;
+    letter-spacing: -0.55px;
 }
 
 .p-flex p {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     letter-spacing: -0.45px;
@@ -716,25 +712,163 @@ hr {
 }
 
 .location-content p{
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.55px;
+    color: rgba(2, 6, 12, 0.75);
+}
+
+.margin-left-33{
+    margin-left: 33px;
+}
+
+.location-content a, .timimg-content a {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.55px;
+    color: rgb(255, 82, 0);
+    margin: 10px 0 0 33px;
+}
+
+.location-content {
+    padding-top: 18px;
+}
+
+.location-row {
+    padding: 18px 0 16px 20px;
+}
+
+.p-flex svg{
+    overflow: visible;
+}
+
+.timimg-content {
+    padding-top: 5px;
+}
+
+.timing-head h2 {
+    font-weight: 800;
+    letter-spacing: -0.55px;
+    font-size: 20px;
+}
+
+.facilities-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 600px;
+    margin-left: 20px;
+    padding: 20px 0 55px 0;
+}
+
+.list ul li{
+    font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     letter-spacing: -0.45px;
     color: rgba(2, 6, 12, 0.75);
+    padding-bottom: 10px;
 }
 
-.margin-left-27{
-    margin-left: 27px;
+/* menu */
+
+.menu-food-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
 }
 
-.location-content a{
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: -0.45px;
-    color: rgb(255, 82, 0);
+.menu-food-head h2{
+    font-weight: 700;
+    letter-spacing: -0.55px;
+    font-size: 24px;
 }
 
-.margin-bottom-40{
-    margin-bottom: 40px;
+/* photos */
+
+.photo-content img {
+    width: 259px;
+    height: 270px;
+}
+
+.photo-content {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.photo-imgs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.photo-tab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 64px 0 40px 0;
+}
+
+.photo-tabs{
+    padding: 12px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 36px;
+    border-radius: 18px;
+    background: rgb(240, 240, 245);
+    border: 1px solid rgba(2, 6, 12, 0.75);
+    box-shadow: rgba(2, 6, 12, 0.04) 0px 2px 12px 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.4px;
+    color: rgba(2, 6, 12, 0.75);
+}
+
+.photo-tabs-inactive{
+    padding: 12px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 36px;
+    border-radius: 18px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(2, 6, 12, 0.15);
+    box-shadow: rgba(2, 6, 12, 0.04) 0px 2px 12px 0px;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.4px;
+    color: rgba(2, 6, 12, 0.75);
+}
+
+.view-more{
+    width: 100%;
+    padding: 16px;
+    border: 1.5px solid rgba(2, 6, 12, 0.15);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    max-width: 803px;
+    margin: 44px 0 96px 0;
+}
+
+.view-more a{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.35px;
+    color: rgba(2, 6, 12, 0.75);
 }
