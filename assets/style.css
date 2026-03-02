@@ -812,6 +812,7 @@ hr {
     align-items: center;
     gap: 10px;
     padding: 64px 0 40px 0;
+    text-transform: uppercase;
 }
 
 .photo-tabs{
